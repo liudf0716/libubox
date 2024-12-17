@@ -11,7 +11,7 @@ IF(CMAKE_C_COMPILER_VERSION VERSION_GREATER 6)
 ENDIF()
 ADD_DEFINITIONS(-Os -std=gnu99 -g3 -Wmissing-declarations -Wno-unused-parameter)
 
-OPTION(BUILD_LUA "build Lua plugin" ON)
+OPTION(BUILD_LUA "build Lua plugin" OFF)
 OPTION(BUILD_EXAMPLES "build examples" ON)
 
 INCLUDE(FindPkgConfig)
